@@ -1,9 +1,5 @@
 Dembasiby::App.controllers :page do
 
-  get :home, :map => '/' do
-    render :erb, 'index'
-  end
-
   get :contact, :map => '/contact' do
     render :erb, 'contact'
   end
@@ -15,4 +11,9 @@ Dembasiby::App.controllers :page do
   get :blog, :map => '/blog' do
     render :erb, 'blog'
   end
+
+  get :home, :map => '/' do
+    render :erb, 'index'
+  end
+
 end
