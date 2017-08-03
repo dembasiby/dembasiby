@@ -1,7 +1,7 @@
 Dembasiby::App.controllers :posts do
 
   get :index do
-    @posts = Post.reverse_order(:created_at).all
+    @posts = Post.order(:created_at).reverse_order.all
     render :erb, 'posts/index'
   end
 
