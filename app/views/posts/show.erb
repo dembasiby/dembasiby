@@ -1,0 +1,18 @@
+<% @title = @post.title %>
+<div id='show'>
+  <div class='post'>
+    <div class='title'>
+      <%= @post.title %>
+    </div>
+    <div class='date'>
+      <%= time_ago_in_words(@post.created_at || Time.now) + ' ago' %>
+    </div>
+    <div class='body'>
+      <%= simple_format(@post.body) %>
+    </div>
+  </div>
+</div>
+
+<p>
+  <%= link_to 'View all posts', url_for(:posts, :index) %>
+</p>
