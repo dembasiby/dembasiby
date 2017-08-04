@@ -13,6 +13,7 @@ Dembasiby::Admin.controllers :posts do
 
   post :create do
     @post = Post.new(params[:post])
+    @post.account = current_account
     if @post.save
       @title = pat(:create_title, :model => "post #{@post.id}")
       flash[:success] = pat(:create_success, :model => 'Post')

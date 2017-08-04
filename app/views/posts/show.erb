@@ -5,7 +5,7 @@
       <%= @post.title %>
     </div>
     <div class='date'>
-      <%= time_ago_in_words(@post.created_at || Time.now) + ' ago' %>
+      <%= time_ago_in_words(@post.created_at || Time.now)+' ago' %>
     </div>
     <div class='body'>
       <%= simple_format(@post.body) %>

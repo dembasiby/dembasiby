@@ -8,4 +8,7 @@
   <div class='body'>
     <%= simple_format(post.body) %>
   </div>
+  <div class="details">
+      <div class="author">Posted by #{post.account.email}</div>
+  </div>
 </div>

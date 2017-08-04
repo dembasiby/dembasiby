@@ -1,4 +1,4 @@
-class AddAccountToPost < ActiveRecord::Migration
+class AddAccountToPost < ActiveRecord::Migration[4.2]
   def self.up
     change_table :posts do |t|
       t.integer :account_id

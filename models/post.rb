@@ -3,6 +3,6 @@ class Post < ActiveRecord::Base
 
   def validate
     super
-    validate_presence_of [:title, :body]
+    validates_presence_of [:title, :body]
   end
 end
