@@ -1,9 +1,9 @@
 <% @title = @post.title %>
 <div id='show'>
   <div class='post'>
-    <div class='title'>
+    <h1 class='title'>
       <%= @post.title %>
-    </div>
+    </h1>
     <div class='date'>
       <%= time_ago_in_words(@post.created_at || Time.now)+' ago' %>
     </div>

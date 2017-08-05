@@ -1,7 +1,7 @@
-<div class='post'>
-  <div class='title'>
+ <div class='post'>
+  <h1 class='title'>
     <%= link_to post.title, url_for(:posts, :show, :id => post.id) %>
-  </div>
+  </h1>
   <div class='date'>
     <%= time_ago_in_words(post.created_at || Time.now) + ' ago' %>
   </div>
@@ -9,6 +9,6 @@
     <%= simple_format(post.body) %>
   </div>
   <div class="details">
-      <div class="author">Posted by #{post.account.email}</div>
+      <div class="author">Posted by ... </div>
   </div>
 </div>
